@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade-Station</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: blue;
+  }
+
+  .nav-links li {
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+  }
+
+  .burger {
+      display: block;
+  }
+  
+  .nav-links.active {
+      display: flex;
+  }
+}
+.header {
+  font-size: 20px;
+  position: relative;
+  bottom: 11px;
+  color: white;
+  left: 10px;
+}
+.up{
+  position: relative;
+  top: 10px;
+  left: 100px;
+  color: blue;
+  background-color: white;
+  height: 20px;
+  padding: 3px;
+  border-radius: 50px;
+  padding-left: 3px;
+}
+.in {
+  position: relative;
+  top: 10px;
+  border-radius: 50px;
+  padding: 3px;
+  left: 130px;
+  color: blue;
+  background-color: white;
+  height: 20px;
+}
+.main {
+  border: 2px solid ;
+  height: 1200px;
+  width: 409px; 
+  background-color: rgb(163, 163, 255);
+}
+.img1 {
+  margin-left: 40px;
+  margin-bottom: 0px;
+}
+.img2 {
+  width: 400px;
+  margin-top: 10px;
+}
+.work {
+  border: 3px solid rgb(255, 234, 238) ;
+  height: 200px;
+  background-color: rgb(255, 234, 238);
+}
+#put {
+  font-size: 40px;
+  font-weight: bolder;
+  position: static;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  color: blue;
+}
+#grow {
+  font-size: 20px;
+  font-weight: bolder;
+  position: static;
+  margin-left: 30px;
+} 
+.btn1 {
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 20px;
+  border: 2px solid blue;
+  margin-left: 100px;
+}
+#h22 {
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+p {
+  font-size: 17px;
+}
+.btn2 {
+  background-color: green;
+  font-size: 16px;
+  color: white;
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 15px;
+  margin-left: 50px;
+}
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">@Trade-Station</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="https://trade-station-sign-from-uimw.vercel.app">Sign up</a></li>
+            <li><a href="https://trade-station-sign-from-uimw.vercel.app/02-signin.html">Sign in</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div  class="main">
+      
+      <img src=".//section_1.webp" alt=""
+      width="320px" height="300px" class="img1">
+
+      <div class="work">
+        <h2 id="put">Put your money to work</h2>
+        <h3 id="grow">Invest wisely. Grow wealth</h3>
+        <button class="btn1" onclick="myfunction()">Open an account</button>
+        <img src=".//section_5.webp" alt="" class="img2">
+        <div class="sub">
+          <H2 id="h22">Get a littel richer each day</H2>
+          <p>One small step today, a giant leap of tomorrow.</p>
+          <button class="btn2" onclick="myfunction()">start your finanace jounery today</button>
+        </div>
+      </div>
+    </div>
+    <script>
+       function myfunction() {
+    window.location.href="https://trade-station-sign-from-uimw.vercel.app"
+    }
+    </script>
+    <script> document.getElementById('burger').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('active');
+    });</script>
+</body>
+</html>
