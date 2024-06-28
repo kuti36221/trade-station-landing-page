@@ -63,117 +63,73 @@
                 top: 60px;
                 left: 0;
                 background-color: blue;
-            }
-
-            .nav-links li {
-                text-align: center;
-                padding: 10px 0;
-                width: 100%;
-            }
-
-            .burger {
-                display: block;
+                padding: 10px 0; /* Added padding to separate links */
             }
 
             .nav-links.active {
                 display: flex;
             }
-        }
 
-        .header {
-            font-size: 20px;
-            position: relative;
-            bottom: 11px;
-            color: white;
-            left: 10px;
-        }
+            .nav-links li {
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+            }
 
-        .up {
-            position: relative;
-            top: 10px;
-            left: 100px;
-            color: blue;
-            background-color: white;
-            height: 20px;
-            padding: 3px;
-            border-radius: 50px;
-            padding-left: 3px;
-        }
+            .header,
+            .up {
+                font-size: 16px; /* Adjusted font size for smaller screens */
+            }
 
-        .main {
-            border: 2px solid ;
-            height: 1200px;
-            width: 409px; 
-            background-color: rgb(163, 163, 255);
-            margin-top: 60px;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+            .main {
+                width: 100%; /* Full width for mobile screens */
+                padding: 10px; /* Reduced padding for better mobile layout */
+                box-sizing: border-box;
+            }
 
-        .img1 {
-            margin-left: 40px;
-            margin-bottom: 0px;
-        }
+            .img1 {
+                margin-left: 0; /* Center image on smaller screens */
+                margin-bottom: 10px; /* Increased margin for better spacing */
+                width: 100%; /* Full width for images on mobile */
+                height: auto; /* Maintain aspect ratio */
+            }
 
-        .img2 {
-            width: 400px;
-            margin-top: 10px;
-        }
+            .img2 {
+                width: 100%; /* Full width for images on mobile */
+                margin-top: 10px;
+                height: auto; /* Maintain aspect ratio */
+            }
 
-        .work {
-            border: 3px solid rgb(255, 234, 238) ;
-            height: 200px;
-            background-color: rgb(255, 234, 238);
-            padding: 20px;
-            box-sizing: border-box;
-            margin-top: 20px;
-        }
+            .work {
+                border: 3px solid rgb(255, 234, 238);
+                height: auto; /* Adjusted height for dynamic content */
+                background-color: rgb(255, 234, 238);
+                padding: 10px; /* Reduced padding for better mobile layout */
+                margin-top: 20px;
+                box-sizing: border-box;
+            }
 
-        #put {
-            font-size: 40px;
-            font-weight: bolder;
-            color: blue;
-            margin-bottom: 10px;
-        }
+            #put {
+                font-size: 28px; /* Adjusted font size for headings */
+                margin-bottom: 5px; /* Reduced margin for better mobile layout */
+            }
 
-        #grow {
-            font-size: 20px;
-            font-weight: bolder;
-            color: blue;
-            margin-bottom: 20px;
-        }
+            #grow {
+                font-size: 18px; /* Adjusted font size for subheadings */
+                margin-bottom: 15px; /* Reduced margin for better mobile layout */
+            }
 
-        .btn1 {
-            background-color: blue;
-            color: white;
-            font-size: 18px;
-            padding: 7px;
-            border-radius: 20px;
-            border: 2px solid blue;
-            margin-left: 100px;
-            cursor: pointer;
-        }
+            .btn1,
+            .btn2 {
+                font-size: 16px; /* Adjusted font size for buttons */
+                padding: 5px 15px; /* Adjusted padding for buttons */
+                margin-left: 0; /* Centered buttons on smaller screens */
+            }
 
-        #h22 {
-            font-size: 35px;
-            margin-bottom: 10px;
-            color: blue;
-        }
-
-        p {
-            font-size: 17px;
-            margin-bottom: 10px;
-        }
-
-        .btn2 {
-            background-color: green;
-            font-size: 16px;
-            color: white;
-            border: 1px solid green;
-            padding: 5px;
-            border-radius: 15px;
-            margin-left: 50px;
-            cursor: pointer;
+            p {
+                font-size: 14px; /* Adjusted font size for paragraphs */
+                margin-bottom: 5px; /* Reduced margin for better mobile layout */
+            }
         }
     </style>
 </head>
@@ -192,7 +148,7 @@
     </nav>
 
     <div class="main">
-        <img src="./section_1.webp" alt="Imagen 1" width="320px" height="300px" class="img1">
+        <img src="./section_1.webp" alt="Imagen 1" class="img1">
 
         <div class="work">
             <h2 id="put">Pon tu dinero a trabajar</h2>
